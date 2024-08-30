@@ -26,6 +26,52 @@
 		<link rel="stylesheet" type="text/css" href="fonts/template/style.css">
 		<link rel="stylesheet" type="text/css" href="fonts/social/style.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<style>
+			.whatsapp-icon {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				z-index: 100;
+				width: 60px;
+				height: 60px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				border-radius: 50%;
+				background-color: #25d366;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: transform 0.3s ease;
+			}
+	
+			.whatsapp-icon img {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+			}
+	
+			.whatsapp-icon:hover {
+				transform: scale(1.1);
+			}
+	
+			@media screen and (max-width: 768px) {
+				.whatsapp-icon {
+					width: 50px;
+					height: 50px;
+					bottom: 15px;
+					right: 15px;
+				}
+			}
+	
+			@media screen and (max-width: 480px) {
+				.whatsapp-icon {
+					width: 40px;
+					height: 40px;
+					bottom: 10px;
+					right: 10px;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<div class="site-container">
@@ -532,7 +578,6 @@
 				</div>
 			</div>
 		</div>
-		<a href="#top" class="scroll-top animated-element template-arrow-vertical-3" title="Scroll to top"></a>
 		<div class="background-overlay"></div>
 		<!--js-->
 		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
@@ -557,5 +602,9 @@
 		<script type="text/javascript" src="js/jquery.imagesloaded-packed.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/odometer.min.js"></script>
+
+		<a href="https://wa.me/5379190516" class="whatsapp-icon" target="_blank">
+			<img src="whatsapp-icon.png" alt="WhatsApp">
+		</a>
 	</body>
 </html>
