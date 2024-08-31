@@ -28,54 +28,88 @@
 		<link rel="shortcut icon" href="images/favicon.ico">
 
 		<style>
-			.whatsapp-icon {
-				position: fixed;
-				bottom: 20px;
-				right: 20px;
-				z-index: 100;
-				width: 60px;
-				height: 60px;
-				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-				border-radius: 50%;
-				background-color: #25d366;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				transition: transform 0.3s ease;
+			.background-light-green {
+				background-color: #74db74; /* Light green background */
+				color: white; /* Default text color for the container */
 			}
 	
-			.whatsapp-icon img {
-				width: 100%;
-				height: 100%;
-				border-radius: 50%;
+			.background-light-green * {
+				color: white; /* Set text color of all child elements to white */
 			}
 	
-			.whatsapp-icon:hover {
-				transform: scale(1.1);
+			.background-light-green a {
+				color: white; /* Ensure links are also white */
+				text-decoration: none; /* Optional: Remove underline from links */
 			}
 	
-			@media screen and (max-width: 768px) {
+			.background-light-green .social-icons a {
+				color: white; /* Set icon color */
+				/* Additional styles for icons if they are font icons */
+			}
+	
+			/* Specific styling for phone numbers to ensure they are white */
+			.background-light-green .contact-details a {
+				color: white; /* Set color for phone number links */
+			}
+	
+			/* Ensure all list items are white */
+			.background-light-green .contact-details li,
+			.background-light-green .header-top-bar ul li {
+				color: white; /* Set color for list items */
+			}
+	
+			/* Optional: Style for social icons if they use font icons */
+			.background-light-green .social-icons a::before {
+				color: white; /* Color for font icons */
+			}
 				.whatsapp-icon {
-					width: 50px;
-					height: 50px;
-					bottom: 15px;
-					right: 15px;
+					position: fixed;
+					bottom: 20px;
+					right: 20px;
+					z-index: 100;
+					width: 60px;
+					height: 60px;
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+					border-radius: 50%;
+					background-color: #25d366;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					transition: transform 0.3s ease;
 				}
-			}
-	
-			@media screen and (max-width: 480px) {
-				.whatsapp-icon {
-					width: 40px;
-					height: 40px;
-					bottom: 10px;
-					right: 10px;
+		
+				.whatsapp-icon img {
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
 				}
-			}
-		</style>
+		
+				.whatsapp-icon:hover {
+					transform: scale(1.1);
+				}
+		
+				@media screen and (max-width: 768px) {
+					.whatsapp-icon {
+						width: 50px;
+						height: 50px;
+						bottom: 15px;
+						right: 15px;
+					}
+				}
+		
+				@media screen and (max-width: 480px) {
+					.whatsapp-icon {
+						width: 40px;
+						height: 40px;
+						bottom: 10px;
+						right: 10px;
+					}
+				}
+			</style>
 	</head>
 	<body>
 		<div class="site-container">
-			<div class="header-top-bar-container clearfix">
+			<div class="header-top-bar-container clearfix background-light-green">
 				<div class="header-top-bar">
 					<ul class="contact-details clearfix">
 						<li class="template-location">
@@ -107,12 +141,12 @@
 					<div class="menu-container first-menu clearfix">
 						<nav>
 							<ul class="sf-menu">
-								<li class="selected">
+								<li>
 									<a href="https://evdenkolay.com/" title="Home">
 										ANASAYFA
 									</a>
 								</li>
-								<li>
+								<li class="selected">
 									<a href="hizmetlerimiz.html" title="Services">
 										HİZMETLERİMİZ
 									</a>
@@ -150,12 +184,12 @@
 							<nav>
 								<ul class="mobile-menu collapsible-mobile-submenus">
 									<li><a class="template-arrow-vertical-3" href="#">&nbsp;</a></li>
-									<li class="selected">
+									<li>
 										<a href="https://evdenkolay.com/" title="Home">
 											ANASAYFA
 										</a>
 									</li>
-									<li>
+									<li class="selected"s>
 										<a href="hizmetlerimiz.html" title="Services">
 											HİZMETLERİMİZ
 										</a>
@@ -297,13 +331,13 @@
 										<span class="template-arrow-horizontal-3"></span>
 									</a>
 								</li>
-								<li>
+								<li class="selected">
 									<a href="tadilatveonarim.html" title="Tadilat & Onarım">
 										Tadilat ve Onarım
 										<span class="template-arrow-horizontal-3"></span>
 									</a>
 								</li>
-								<li class="selected">
+								<li>
 									<a href="klimabakimiveonarimi.html" title="Klima Bakımı ve Onarımı">
 										Klima Bakımı ve Onarımı
 										<span class="template-arrow-horizontal-3"></span>
