@@ -28,7 +28,7 @@
 		<link rel="shortcut icon" href="images/favicon.ico">
 
 		<style>
-        .background-light-green {
+		.background-light-green {
             background-color: #74db74; /* Light green background */
             color: white; /* Default text color for the container */
         }
@@ -39,18 +39,20 @@
 
         .background-light-green a {
             color: white; /* Ensure links are also white */
+            text-decoration: none; /* Optional: Remove underline from links */
         }
 
         .background-light-green .social-icons a {
             color: white; /* Set icon color */
-            /* Additional styles for icons can be added here */
+            /* Additional styles for icons if they are font icons */
         }
 
-        .background-light-green .contact-details li {
-            color: white; /* Set color for list items */
+        /* Specific styling for phone numbers to ensure they are white */
+        .background-light-green .contact-details a {
+            color: white; /* Set color for phone number links */
         }
 
-        /* Optional: Style for the social icons if they use font icons */
+        /* Optional: Style for social icons if they use font icons */
         .background-light-green .social-icons a::before {
             color: white; /* Color for font icons */
         }
