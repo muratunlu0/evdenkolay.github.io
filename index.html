@@ -28,6 +28,46 @@
 		<link rel="shortcut icon" href="images/favicon.ico">
 
 		<style>
+			body {
+				font-family: Arial, sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+				background-color: #f0f0f0;
+			}
+	
+			.button-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+	
+			.call-button {
+				display: inline-flex;
+				align-items: center;
+				background-color: #25D366;
+				color: white;
+				padding: 12px 20px;
+				border-radius: 25px; /* Kenar yarıçapı */
+				text-decoration: none;
+				font-size: 16px;
+				font-weight: bold;
+				transition: background-color 0.3s ease;
+			}
+	
+			.call-button:hover {
+				background-color: #1EBE56;
+			}
+	
+			.phone-icon {
+				margin-right: 8px;
+				font-size: 18px; /* Telefon simgesi boyutu */
+			}
+		</style>
+
+		<style>
 			.whatsapp-icon {
 				position: fixed;
 				bottom: 20px;
@@ -200,9 +240,12 @@
 									</li>
 									
 									<li>
-										<a href="iletisim.html" title="İLETİŞİM">
-											BİZİMLE ÇALIŞ
-										</a>
+										<div class="button-container">
+											<a href="tel:+YOUR_PHONE_NUMBER" class="call-button">
+												<span class="phone-icon">📞</span> <!-- Telefon simgesi -->
+												Bizimle Çalışmak İçin
+											</a>
+										</div>
 									</li>
 								</ul>
 							</nav>
