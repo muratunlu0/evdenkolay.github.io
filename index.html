@@ -28,13 +28,31 @@
 		<link rel="shortcut icon" href="images/favicon.ico">
 
 		<style>
-			.background-light-green {
+        .background-light-green {
             background-color: #74db74; /* Light green background */
-            color: white; /* White text color for contrast */
+            color: white; /* Default text color for the container */
         }
 
         .background-light-green * {
             color: white; /* Set text color of all child elements to white */
+        }
+
+        .background-light-green a {
+            color: white; /* Ensure links are also white */
+        }
+
+        .background-light-green .social-icons a {
+            color: white; /* Set icon color */
+            /* Additional styles for icons can be added here */
+        }
+
+        .background-light-green .contact-details li {
+            color: white; /* Set color for list items */
+        }
+
+        /* Optional: Style for the social icons if they use font icons */
+        .background-light-green .social-icons a::before {
+            color: white; /* Color for font icons */
         }
 			.whatsapp-icon {
 				position: fixed;
