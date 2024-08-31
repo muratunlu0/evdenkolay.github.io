@@ -28,11 +28,13 @@
 		<link rel="shortcut icon" href="images/favicon.ico">
 
 		<style>
-			.background-green {
-            font-size: 20px;
-            background-color: green; /* Set the background color to green */
-            color: white; /* Optional: Change the text color for better contrast */
-            padding: 10px; /* Optional: Add padding for better appearance */
+			.background-light-green {
+            background-color: #74db74; /* Light green background */
+            color: white; /* White text color for contrast */
+        }
+
+        .background-light-green * {
+            color: white; /* Set text color of all child elements to white */
         }
 			.whatsapp-icon {
 				position: fixed;
@@ -81,7 +83,7 @@
 	</head>
 	<body>
 		<div class="site-container">
-			<div class="header-top-bar-container clearfix background-green">
+			<div class="header-top-bar-container clearfix background-light-green">
 				<div class="header-top-bar">
 					<ul class="contact-details clearfix">
 						<li class="template-location">
