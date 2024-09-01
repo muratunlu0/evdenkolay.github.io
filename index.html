@@ -28,66 +28,81 @@
 		<link rel="shortcut icon" href="images/favicon.ico">
 
 		<style>
-			 .call-button {
+			.call-container {
             position: fixed;
             bottom: 20px;
             left: 20px;
             z-index: 100;
             display: flex;
             align-items: center;
+        }
+
+        .call-icon {
             background-color: #ff0000; /* Kırmızı arka plan */
-            color: white;
-            padding: 10px 15px;
-            border-radius: 50px;
-            text-decoration: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
-            font-family: Arial, sans-serif;
         }
 
-        .call-button img {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-            border-radius: 50%;
+        .call-icon img {
+            width: 28px;
+            height: 28px;
         }
 
-        .call-button:hover {
+        .call-icon:hover {
             transform: scale(1.1);
         }
 
+        .call-text {
+            margin-left: 10px;
+            background-color: #555;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .call-text:hover {
+            background-color: #333;
+        }
+
         @media screen and (max-width: 768px) {
-            .call-button {
+            .call-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .call-icon img {
+                width: 24px;
+                height: 24px;
+            }
+
+            .call-text {
                 padding: 8px 12px;
-                bottom: 15px;
-                left: 15px;
-            }
-
-            .call-button img {
-                width: 20px;
-                height: 20px;
-                margin-right: 8px;
-            }
-
-            .call-button span {
                 font-size: 14px;
             }
         }
 
         @media screen and (max-width: 480px) {
-            .call-button {
+            .call-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .call-icon img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .call-text {
                 padding: 6px 10px;
-                bottom: 10px;
-                left: 10px;
-            }
-
-            .call-button img {
-                width: 18px;
-                height: 18px;
-                margin-right: 6px;
-            }
-
-            .call-button span {
                 font-size: 12px;
             }
         }
@@ -725,9 +740,13 @@
 			<img src="whatsapp-icon.png" alt="WhatsApp">
 		</a>
 
-		<a href="tel:+901234567890" class="call-button">
-			<img src="call-icon.png" alt="Call Icon">
-			<span>Hemen Ara</span>
-		</a>
+		<div class="call-container">
+			<!-- Call Icon -->
+			<a href="tel:+901234567890" class="call-icon">
+				<img src="call-icon.png" alt="Call Icon">
+			</a>
+			<!-- Call Text -->
+			<a href="tel:+901234567890" class="call-text">Hemen Ara</a>
+		</div>
 	</body>
 </html>
